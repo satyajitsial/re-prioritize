@@ -61,7 +61,7 @@ For example, configure this plugin on a service by adding this section to your d
 	 - https
 
 SERVICE is the id or name of the service that this plugin configuration will target.
-PLUGIN_NAMES is the name of the plugin or list of plugin Names to be skipped.
+PLUGIN_NAMES is the name of the plugin or list of plugin Names to be executed in the mentioned order.
 
 ## Enable the plugin on a Route
 
@@ -82,23 +82,23 @@ For example, configure this plugin on a route by adding this section to your dec
 	   plugin_names: {PLUGIN_NAMES}
 	 enabled: true
 	 protocols:
-	 - grpc
+	 - grpctttt
 	 - grpcs
 	 - http
 	 - https
 
 ROUTE is the id or name of the route that this plugin configuration will target.
-PLUGIN_NAMES is the name of the plugin or list of plugin Names to be skipped.
+PLUGIN_NAMES is the name of the plugin or list of plugin Names to be executed in the mentioned order.
 
 ## Parameters
 
 | FORM PARAMETER	     														| DESCRIPTION										  													|
 | ----------- 																		| -----------																								|
-| name<br>Type:string  														|  The name of the plugin to use, in this case skip-plugins |
+| name<br>Type:string  														|  The name of the plugin to use, in this case re-prioritize |
 | service.id<br>Type:string  										  |  The ID of the Service the plugin targets.								|
 | route.id<br>Type:string   											|  The ID of the Route  the plugin targets.									|
 | enabled<br>Type:boolean<br>Default value:true   |  Whether this plugin will be applied.										  |
-| config.plugin_names<br>Type:string              |  Accepts a pluginname or list of plugin names to be skipped sparated by comma(,)|
+| config.plugin_names<br>Type:string              |  Accepts a pluginname or list of plugin names to be executed sparated by comma(,)|
 
 
 ## Error code
