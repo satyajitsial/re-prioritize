@@ -1,8 +1,8 @@
 # Kong re-prioritize Plugin
 ## Overview
 This plugin will take the list of Plugin Names and reorders the Execution of those Plugins in the Request Cycle .
-This is mainly designed to reshuffle the execution order of the plugins applied to service , route and globally to workspace.
-This will also try to solve the issue raised here 
+The Plugin supports Dynamic ordering of Kong plugins for service or route as per customer needs.
+This will also try to solve the issue raised here https://github.com/Kong/kong/discussions/7193
 
 ## Tested in Kong Release
 Kong Enterprise 2.7.1.2
@@ -82,7 +82,7 @@ For example, configure this plugin on a route by adding this section to your dec
 	   plugin_names: {PLUGIN_NAMES}
 	 enabled: true
 	 protocols:
-	 - grpctttt
+	 - grpc
 	 - grpcs
 	 - http
 	 - https
