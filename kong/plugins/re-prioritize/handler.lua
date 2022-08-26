@@ -49,7 +49,7 @@ local function validatePluginNames(conf,ctx)
     for _,configPlugin in pairs(pluginNames) do
 	   if ( pluginstable[configPlugin] == nil or configPlugin == currentpluginName) then
 	     kong.log.err("Invalid Plugin Configuration : ", configPlugin)
-         return kong.response.exit(400, { message = "Invalid Plugin Configuration " .. configPlugin} )
+         return kong.response.exit(400, { message = "Plugin " .. configPlugin .. " is not enabled, Please check re-prioritize plugin configuration" .. " to add plugin names which are enabled for the service or workspace"})
 	   end
 	end
 end

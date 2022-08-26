@@ -105,7 +105,7 @@ PLUGIN_NAMES is the name of the plugin or list of plugin Names to be executed in
 
 | Request	     														| Response Code				 |       Response									|
 | ----------- 														| -----------					 | -----------	                  |
-| Invalid Input Plugin name which is not enabled   		|  400								 | "message": "Invalid Plugin Configuration <PLUGIN_NAME>"|
+| Invalid Input Plugin name which is not enabled   		|  400								 | "message": "Plugin <PLUGIN_NAME> is not enabled, Please check re-prioritize plugin configuration to add plugin names which are enabled for the service or workspace"|
 
 
 ## Known Limitation
@@ -114,5 +114,5 @@ The Plugin doesn't reorders the Execution of other plugins in the Response cycle
 
 ## Contributors
 Developed By : Satyajit.Sial@VERIFONE.com <br>
-Designed By  : Vineet.Dutt@VERIFONE.com , Prema.Namasivayam@VERIFONE.com , krishna_p2@VERIFONE.com
-			         
+Designed By  : Prema.Namasivayam@VERIFONE.com <br>
+Guided By    : Vineet.Dutt@VERIFONE.com , krishna_p2@VERIFONE.com  
